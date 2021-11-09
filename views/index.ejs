@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Web</title>
+    
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <%-include('./partials/font.ejs') %>
+
+    <script src="https://kit.fontawesome.com/dd1a710fc6.js" crossorigin="anonymous"></script>
+
+</head>
+<body>  
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid logo">
+      <img src="./img/Logo-pizza.png.png" alt="Logo">
+      
+      
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">MENU</a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <li><a class="dropdown-item" href="../pages/pizza.ejs">Pizzas</a></li>
+      <li><a class="dropdown-item" href="../pages/hamburguesa.ejs">Hamburguesas</a></li>
+      <li><a class="dropdown-item" href="../pages/canes.ejs">Carnes</a></li>
+      <li><a class="dropdown-item" href="../pages/pastas.ejs">Pastas</a></li>
+      <li><a class="dropdown-item" href="../pages/sandwich.ejs">Sandwiches</a></li>
+      <li><a class="dropdown-item" href="../pages/bebibas.ejs">Bebidas</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Combos</a></li>
+    </ul>
+  </li>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item ">
+          <a class="nav-link active" aria-current="page" href="#">Top Comidas</a>
+        </li>
+        <li class="nav-item">
+          
+          <a class="nav-link active" aria-current="page" href="#">Nosotros
+            
+          </a>
+        </li>
+        <li class="nav-items">
+          <a class="nav-link disabled text-secondary"><i class="fas fa-phone-alt"></i> +54 3485-258499</a>
+        </li>
+      </ul>
+
+      <form class="d-flex">
+        <input class="form-control me-2 border-warning" type="search" placeholder="Encuentra aquí lo que deseas" aria-label="Search">
+        <button class="btn btn-outline-warning text-secondary" type="submit" >Buscar</button>
+        
+      </form>
+        <div class="carrito">
+          <a href="./pages/carrito.ejs"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </div>  
+    </div>
+</nav>
+
+    <header>
+      <div class="nombre">
+        <h1>Mozzarella Restaurant</h1>
+      </div> 
+    </header>
+ 
+    <main>
+      <article class="container">
+        <div class="tarjeta pizza">
+          <a href="./pages/pizza.ejs">Ver carta</a>
+        </div>
+        <div class="tarjeta hamburguesa">
+          <a href="./pages/hamburguesa.ejs">Ver carta</a>
+        </div>
+         <div class="tarjeta carnes">
+          <a href="./pages/canes.ejs">Ver carta</a>
+        </div>
+        <div class="tarjeta pastas">
+          <a href="./pages/pastas.ejs">Ver carta</a>
+        </div>
+        <div class="tarjeta sandwich">
+          <a href="./pages/sandwich.ejs">Ver carta</a>
+        </div>
+        <div class="tarjeta bebidas">
+          <a href="./pages/bebibas.ejs">Ver carta</a>
+        </div> 
+      </article>
+    </main>
+
+    <section >
+      <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Sobre Nosotros
+        <i class="fas fa-chevron-up"></i>
+        
+      </button>
+
+      <div  class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Redes Sociales: </h5>
+          <a href="#"><i class="fab fa-facebook-square"></i> </a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-twitter-square"> </i></a>
+          <a href=""><i class="fab fa-whatsapp"></i></a>
+          
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, laudantium asperiores distinctio ipsum, rerum nostrum molestias placeat, officiis inventore dolorum voluptates reiciendis sapiente. Cupiditate, praesentium? Laboriosam, quia. Eius, aperiam sit.</p>
+          <p>Contactanos: <i class="fas fa-phone-alt"></i> +54 3485-258499
+          <br>
+          Email: mozzarelaRestaurant@gmail.com</p>
+          <p>copyright© 2021 Martin Chamarez</p>
+          
+        </div>
+      </div>
+    </section>
+
+    <%-include('./partials/footer.ejs') %>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+</body>
+</html>

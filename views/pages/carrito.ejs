@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%-include('../partials/meta.ejs')%>
+  <%-include('../partials/font.ejs') %>
+</head>
+<body>  
+    
+  <style>
+    body{
+  background-image: url(../img/fondo-fondo.jpg);
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  }
+  </style>
+
+    <%-include('../partials/nav.ejs') %>   
+
+    <header>
+      <div class="nombre">
+        <h1>Tu Menu</h1>
+      </div> 
+    </header>
+ 
+    <Main>
+      <section class="container">
+        <div class="cajaNombres">
+          <div class="caja1"><p></p> </div>
+          <div class="caja2"><p></p>  </div>
+          <div class="caja3"><p></p> </div>
+          <div class="caja4"><p></p> </div>
+          <div class="caja5"><p></p> </div>
+        </div>
+        <div class="cajaPrecio">
+          <div class="precio1"><p> </p></div>
+          <div class="precio2"><p></p></div>
+          <div class="precio3"><p></p></div>
+          <div class="precio4"><p></p></div>
+          <div class="precio5"><p></p></div>
+        </div>
+      </section>
+    </Main>
+   
+    <%-include('../partials/footer.ejs') %>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%-include('../partials/meta.ejs')%>
+<%-include('../partials/font.ejs') %>
+</head>
+<body>  
+    
+  <style>
+    body{
+  background-image: url(../img/pizza-hover.jpg);
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  }
+  </style>
+
+    <%-include('../partials/nav.ejs') %>
+
+    <header>
+      <div class="nombre">
+        <h1>Pizzas</h1>
+      </div> 
+    </header>
+ 
+    <Main>
+      <section class="container">
+        <div class="cajaNombres">
+          <div class="caja1"><p>Pizza Especial</p> </div>
+          <div class="caja2"><p>Muzzarela Especial</p>  </div>
+          <div class="caja3"><p>Pizza Primavera</p></div>
+          <div class="caja4"><p>Fugazeta</p></div>
+          <div class="caja5"><p>Pizza Combinada</p></div>
+        </div>
+        <div class="cajaPrecio">
+          <div class="precio1"><p>$400</p>  <a href="#">Encargar</a></div>
+          <div class="precio2"><p>$480</p> <a href="#">Encargar</a></div>
+          <div class="precio3"><p>$490</p> <a href="#">Encargar</a></div>
+          <div class="precio4"><p>$450</p> <a href="#">Encargar</a></div>
+          <div class="precio5"><p>$490 </p><a href="#">Encargar</a></div>
+        </div>
+      </section>
+    </Main>
+   
+    <%-include('../partials/footer.ejs') %>
+
+</body>
+</html>

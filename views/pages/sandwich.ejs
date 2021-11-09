@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%-include('../partials/meta.ejs')%>
+  <%-include('../partials/font.ejs') %>
+</head>
+<body>  
+    
+  <style>
+    body{
+  background-image: url(../img/sandwich-hover.webp);
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  }
+  </style>
+
+    <%-include('../partials/nav.ejs') %>
+
+    <header>
+      <div class="nombre">
+        <h1>Sandwiches</h1>
+      </div> 
+    </header>
+ 
+    <Main>
+      <section class="container">
+        <div class="cajaNombres">
+          <div class="caja1"><p>Sandwich de Milanesa Comun</p> </div>
+          <div class="caja2"><p>Sandwich de Milanesa Especial</p> </div>
+          <div class="caja3"><p>Sandwich de Lomito Comun</p></div>
+          <div class="caja4"><p>Sandwich de Lomito Especial</p></div>
+          <div class="caja5"><p>Sandwich de Jamon y Queso</p></div>
+        </div>
+        <div class="cajaPrecio">
+          <div class="precio1"><p>$300 </p><a href="#">Encargar</a></div>
+          <div class="precio2"><p>$380</p> <a href="#">Encargar</a></div>
+          <div class="precio3"><p>$430</p> <a href="#">Encargar</a></div>
+          <div class="precio4"><p>$490</p> <a href="#">Encargar</a></div>
+          <div class="precio5"><p>$350</p> <a href="#">Encargar</a></div>
+        </div>
+      </section>
+    </Main>
+    
+    <%-include('../partials/footer.ejs') %>
+ 
+</body>
+</html>
