@@ -6,14 +6,7 @@
 </head>
 <body>  
     
-  <style>
-    body{
-  background-image: url(../img/sandwich-hover.webp);
-  background-size: cover;
-  display: flex;
-  flex-flow: column nowrap;
-  }
-  </style>
+  <div class="fondo styleSandwich">
 
     <%-include('../partials/nav.ejs') %>
 
@@ -23,7 +16,7 @@
       </div> 
     </header>
  
-    <Main>
+    <main>
       <section class="container">
         <div class="cajaNombres">
           <div class="caja1"><p>Sandwich de Milanesa Comun</p> </div>
@@ -40,9 +33,10 @@
           <div class="precio5"><p>$350</p> <a href="#">Encargar</a></div>
         </div>
       </section>
-    </Main>
+    </main>
     
     <%-include('../partials/footer.ejs') %>
+  </div>
  
 </body>
 </html>

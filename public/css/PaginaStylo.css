@@ -1,4 +1,27 @@
-
+body .fondo{
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .styleBebidas{
+    background-image: url(../img/bebidas-hover.jpg);
+    }
+    .styleCarnes{
+        background-image: url(../img/asado-hover.jpg);
+    }
+    .styleHamburguesa{
+        background-image: url(../img/hamburguesas-hover.jpg);
+    }
+    .stylePastas{
+        background-image: url(../img/pastas-hover.jpg);
+    }
+    .stylePizza{
+        background-image: url(../img/pizza-hover.jpg);
+    }
+    .styleSandwich{
+        background-image: url(../img/sandwich-hover.webp);
+    }
+    
 nav{
     background: rgba(173, 169, 150, 0.9);  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, rgb(234, 234, 234, 0.9), rgb(219, 219, 219, 0.9), rgb(242, 242, 242, 0.9), rgb(173, 169, 150, 0.9));  /* Chrome 10-25, Safari 5.1-6 */
@@ -208,6 +231,9 @@ footer{
         height:70px;
         border-radius: 20px;
     }
+
+
+    /* ------------ media --------------- */
 
     @media (max-width: 1900px){
         body {

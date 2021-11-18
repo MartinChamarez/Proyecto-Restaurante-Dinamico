@@ -1,11 +1,11 @@
 const express = require('express');
-const path = require('path');       //paquete de express para usar ejs
-// const info = require('./tarjetasJSON.json');
+const path = require('path');       
+//const info = require('./tarjetasJSON.json');
 
 const app = express();
 
 app.set("views", path.join(__dirname,"views"));             
-app.set('view engine', 'ejs');                              //indicamos que usamos ejs
+app.set('view engine', 'ejs');                            
 app.use(express.static(path.join(__dirname,"public")))
 
 app.get('/',(req, res)=>{
@@ -45,7 +45,7 @@ app.get('/pages/carrito.ejs',(req,res)=>{
 });
 
 
-// app.use(express.json());
+app.use(express.json());
 
 app.listen(3000,()=>{
     console.log("Corriendo por el puerto 3000");

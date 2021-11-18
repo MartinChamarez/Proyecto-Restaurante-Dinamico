@@ -6,14 +6,7 @@
 </head>
 <body>  
     
-  <style>
-    body{
-  background-image: url(../img/pizza-hover.jpg);
-  background-size: cover;
-  display: flex;
-  flex-flow: column nowrap;
-  }
-  </style>
+  <div class="fondo stylePizza">
 
     <%-include('../partials/nav.ejs') %>
 
@@ -24,7 +17,7 @@
     </header>
  
     <Main>
-      <section class="container">
+      <section class=" container">
         <div class="cajaNombres">
           <div class="caja1"><p>Pizza Especial</p> </div>
           <div class="caja2"><p>Muzzarela Especial</p>  </div>
@@ -41,8 +34,9 @@
         </div>
       </section>
     </Main>
-   
+    
     <%-include('../partials/footer.ejs') %>
+  </div>
 
 </body>
 </html>
