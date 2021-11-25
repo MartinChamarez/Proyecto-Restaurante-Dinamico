@@ -1,0 +1,16 @@
+<Main>
+    <section class="container">
+    
+        <div class="cajaNombres">
+          <% data.forEach((prod)=>{%> 
+          <div class="caja1"><p> <%=prod.nombre_producto%> </p> </div>
+          <%})%> 
+        </div>
+        
+        <div class="cajaPrecio">
+          <% data.forEach((prod)=>{%> 
+          <div class="precio1"><p><%=prod.precio%></p> <a href="#">Encargar</a></div>
+          <%})%> 
+        </div>
+      </section>
+  </Main>
