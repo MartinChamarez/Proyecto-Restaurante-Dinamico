@@ -6,6 +6,10 @@ const renderHome =(req, res)=>{
     res.render("../views/index")
 };
 
+const renderCarrito =(req, res)=>{
+    res.render("../views/index")
+};
+
 const renderBebidas = (req, res) => {
 
     dataBaseConnection.query("SELECT * FROM bebidas",(error,data)=>{
@@ -80,6 +84,7 @@ module.exports = {
     renderHamburguesa,
     renderPastas,
     renderPizza,
-    renderSandwich
+    renderSandwich,
+    renderCarrito
 };
 
