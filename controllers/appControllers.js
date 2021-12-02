@@ -3,11 +3,13 @@ const dataBaseConnection = require('../config/dataBase');
 
 
 const renderHome =(req, res)=>{
-    res.render("../views/index")
-};
-
-const renderCarrito =(req, res)=>{
-    res.render("../views/index")
+    dataBaseConnection.query("SELECT * FROM tarjetas",(error,data)=>{
+        if (error) {
+            console.log(error)
+        } else {
+            res.render("./index",{data})
+        }
+    });
 };
 
 const renderBebidas = (req, res) => {
@@ -74,6 +76,10 @@ const renderSandwich =(req, res)=>{
             res.render("./pages/sandwich", {data})
         }
     });
+};
+
+const renderCarrito =(req, res)=>{
+    res.render("../views/index")
 };
 
 

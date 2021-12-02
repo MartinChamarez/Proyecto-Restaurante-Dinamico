@@ -10,7 +10,8 @@ const {
     renderPastas,
     renderPizza,
     renderSandwich,
-    renderCarrito} = require('../controllers/appControllers')
+    renderCarrito,
+} = require('../controllers/appControllers')
 
 routes.get('/',renderHome);
 

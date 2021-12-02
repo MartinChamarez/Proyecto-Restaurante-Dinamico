@@ -72,24 +72,11 @@
  
     <main>
       <article class="container">
-        <div class="tarjeta pizza">
-          <a href="./pizza">Ver carta</a>
+        <% data.forEach((prod)=>{%> 
+        <div class="tarjeta">
+         <a href="<%=prod.direccion%>"><img src="<%=prod.imagen%>" alt="imagen de comidas"><%=prod.nombre%></a>
         </div>
-        <div class="tarjeta hamburguesa">
-          <a href="./hamburguesa">Ver carta</a>
-        </div>
-         <div class="tarjeta carnes">
-          <a href="./carnes">Ver carta</a>
-        </div>
-        <div class="tarjeta pastas">
-          <a href="./pastas">Ver carta</a>
-        </div>
-        <div class="tarjeta sandwich">
-          <a href="./sandwich">Ver carta</a>
-        </div>
-        <div class="tarjeta bebidas">
-          <a href="./bebidas">Ver carta</a>
-        </div> 
+        <%})%> 
       </article>
     </main>
 
