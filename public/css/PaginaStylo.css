@@ -4,7 +4,7 @@ body .fondo{
     flex-flow: column nowrap;
 }
     .styleBebidas{
-    background-image: url(../img/bebidas-hover.jpg);
+        background-image: url(../img/bebidas-hover.jpg);
     }
     .styleCarnes{
         background-image: url(../img/asado-hover.jpg);

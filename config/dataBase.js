@@ -1,9 +1,10 @@
 const mysql = require('mysql2');
 
 const dataBaseConnection=mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    database: 'productos' //Nombre de Data Base
+    host: 'bp9hcyenvt8pxa1tixbh-mysql.services.clever-cloud.com',
+    user: 'ugwutpqdi3gbjc0o',
+    database: 'bp9hcyenvt8pxa1tixbh',
+    password: 'FkH00NYOoxcuO2jxQ3fZ'
 });
 
 dataBaseConnection.connect((error)=>{

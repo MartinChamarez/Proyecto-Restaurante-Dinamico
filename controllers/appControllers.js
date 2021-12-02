@@ -78,11 +78,6 @@ const renderSandwich =(req, res)=>{
     });
 };
 
-const renderCarrito =(req, res)=>{
-    res.render("../views/index")
-};
-
-
 module.exports = {
     renderHome,
     renderBebidas,
@@ -90,7 +85,7 @@ module.exports = {
     renderHamburguesa,
     renderPastas,
     renderPizza,
-    renderSandwich,
-    renderCarrito
+    renderSandwich
+
 };
 
