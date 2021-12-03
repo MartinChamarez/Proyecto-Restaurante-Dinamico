@@ -3,10 +3,8 @@ body .fondo{
     display: flex;
     flex-flow: column nowrap;
 }
-.styleFondo{
-    background-image: url(../img/fondo-general1.jpg);
-}
-    /* .styleBebidas{
+
+    .styleBebidas{
         background-image: url(../img/bebidas-hover.jpg);
     }
     .styleCarnes{
@@ -23,7 +21,7 @@ body .fondo{
     }
     .styleSandwich{
         background-image: url(../img/sandwich-hover.webp);
-    } */
+    } 
     
 nav{
     background: rgba(173, 169, 150, 0.9);  /* fallback for old browsers */

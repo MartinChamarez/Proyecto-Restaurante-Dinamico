@@ -18,7 +18,7 @@ const renderBebidas = (req, res) => {
         if (error) {
             console.log(error)
         } else {
-            res.render("./pages/menu",{data})
+            res.render("./pages/bebidas",{data})
         }
     });
 };
@@ -29,7 +29,7 @@ const renderCarnes =(req, res)=>{
             console.log(error)
         } else {
             
-            res.render("./pages/menu", {data})
+            res.render("./pages/carnes", {data})
         }
     });
 };
@@ -40,7 +40,7 @@ const renderHamburguesa =(req, res)=>{
             console.log(error)
         } else {
             
-            res.render("./pages/menu", {data})
+            res.render("./pages/hamburguesa", {data})
         }
     });
 };
@@ -51,7 +51,7 @@ const renderPastas =(req, res)=>{
             console.log(error)
         } else {
             
-            res.render("./pages/menu", {data})
+            res.render("./pages/pastas", {data})
         }
     });
 };
@@ -62,7 +62,7 @@ const renderPizza =(req, res)=>{
             console.log(error)
         } else {
             
-            res.render("./pages/menu", {data})
+            res.render("./pages/pizza", {data})
         }
     });
 };
@@ -73,21 +73,11 @@ const renderSandwich =(req, res)=>{
             console.log(error)
         } else {
             
-            res.render("./pages/menu", {data})
+            res.render("./pages/sandwich", {data})
         }
     });
 };
 
-const renderMenu =(req, res)=>{
-    dataBaseConnection.query("SELECT * FROM tarjetas",(error, data)=>{
-        if (error) {
-            console.log(error)
-        } else {
-            
-            res.render("./pages/menu", {data})
-        }
-    });
-};
 
 module.exports = {
     renderHome,
@@ -96,8 +86,7 @@ module.exports = {
     renderHamburguesa,
     renderPastas,
     renderPizza,
-    renderSandwich,
-    renderMenu
+    renderSandwich
 
 };
 
