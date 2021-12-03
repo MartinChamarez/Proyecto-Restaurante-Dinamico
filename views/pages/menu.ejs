@@ -5,20 +5,23 @@
   <%-include('../partials/font.ejs') %>
 </head>
 <body>  
+    
+  <div class="fondo styleFondo">
 
-  <div class="fondo styleCarnes">
+    <%-include('../partials/nav.ejs') %>   
 
-    <%-include('../partials/nav.ejs') %>
     <header>
+        <% data.forEach((prod)=>{%> 
       <div class="nombre">
-        <h1>Carnes</h1>
+        <h1><%=prod.nombre%></h1>
       </div> 
+      <%})%> 
     </header>
-
+ 
     <%-include('../partials/main.ejs') %>
-
+   
     <%-include('../partials/footer.ejs') %>
   </div>
-  
+
 </body>
 </html>

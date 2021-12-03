@@ -9,23 +9,25 @@ const {
     renderHamburguesa,
     renderPastas,
     renderPizza,
-    renderSandwich
+    renderSandwich,
+    renderMenu
     
 } = require('../controllers/appControllers')
 
 routes.get('/',renderHome);
 
-routes.get('/bebidas',renderBebidas);
+routes.get('./menu/bebidas',renderBebidas);
 
-routes.get("/carnes", renderCarnes);
+routes.get("./menu/carnes", renderCarnes);
 
-routes.get("/hamburguesa", renderHamburguesa);
+routes.get("./menu/hamburguesa", renderHamburguesa);
 
-routes.get("/pastas", renderPastas);
+routes.get("./menu/pastas", renderPastas);
 
-routes.get("/pizza", renderPizza);
+routes.get("./menu/pizza", renderPizza);
 
-routes.get("/sandwich", renderSandwich);
+routes.get("./menu/sandwich", renderSandwich);
 
+routes.get("./menu", renderMenu);
 
 module.exports = routes;
