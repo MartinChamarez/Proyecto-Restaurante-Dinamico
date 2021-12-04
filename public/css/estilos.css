@@ -32,7 +32,11 @@ nav{
         font-size: 18px;
         font-weight: bold;
     }
-   
+    .dropdown-menu{
+        background: rgba(173, 169, 150, 0.9);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, rgb(234, 234, 234, 0.9), rgb(219, 219, 219, 0.9), rgb(242, 242, 242, 0.9), rgb(173, 169, 150, 0.9));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, rgb(234, 234, 234, 0.9), rgb(219, 219, 219, 0.9), rgb(242, 242, 242, 0.9), rgb(173, 169, 150, 0.9)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
     .dropdown-item{
         color: rgb(0, 99, 156) !important;
         font-family: 'Dancing Script', cursive;
